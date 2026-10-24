@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panchakshari P | Sr. Data Analyst & Business Analyst</title>
+  <meta name="description" content="Portfolio of Panchakshari P - Sr. Data Analyst & Business Analyst specializing in telecom telemetry, business intelligence, operations optimization, and data-driven strategy.">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              900: '#14532d',
+            },
+            accent: {
+              cyan: '#06b6d4',
+              blue: '#3b82f6',
+              purple: '#8b5cf6',
+            },
+            dark: {
+              bg: '#0a0d14',
+              card: '#111726',
+              border: '#1e293b',
+              hover: '#1a233a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0d14;
+      color: #f1f5f9;
+    }
+    .code-font {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Subtle background grid */
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    /* Radial glow effect */
+    .glow-bg {
+      background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.15) 0%, rgba(10, 13, 20, 0) 70%);
+    }
+    /* Glassmorphism */
+    .glass {
+      background: rgba(17, 23, 38, 0.75);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-dark-bg text-slate-100 min-h-screen relative selection:bg-cyan-500 selection:text-black">
+
+  <!-- Ambient Glow & Grid -->
+  <div class="fixed inset-0 bg-grid pointer-events-none z-0 opacity-80"></div>
+  <div class="fixed top-0 left-0 right-0 h-[500px] glow-bg pointer-events-none z-0"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="sticky top-0 z-50 glass border-b border-dark-border px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+          PP
+        </div>
+        <div>
+          <div class="font-bold text-white tracking-tight flex items-center gap-2">
+            Panchakshari P
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          </div>
+          <div class="text-xs text-slate-400 code-font">Sr. Data Analyst & Business Analyst</div>
+        </div>
+      </a>
+
+      <!-- Nav Links & CTA -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects & Case Studies</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Technical Toolkit</a>
+        <a href="#experience" class="hover:text-cyan-400 transition-colors">Operational Pillars</a>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="https://github.com/PreethamPanchakshari" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-800/60 text-slate-300 hover:text-white hover:bg-slate-700/60 border border-slate-700 transition-all text-xs font-semibold"
+           title="GitHub Profile">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/panchakshari-p-5298984a/" target="_blank" rel="noopener noreferrer" 
+           class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-blue-600/20 text-blue-400 hover:bg-blue-600/30 border border-blue-500/30 transition-all text-xs font-semibold"
+           title="LinkedIn Profile">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">LinkedIn</span>
+        </a>
+        <a href="mailto:pritham1989@gmail.com" 
+           class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600/30 border border-emerald-500/30 transition-all text-xs font-semibold"
+           title="Send Email">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span class="hidden sm:inline">Email</span>
+        </a>
+        <button onclick="openModal('resume-modal')" 
+                class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-dark-bg font-bold shadow-lg shadow-cyan-500/20 transition-all text-xs">
+          <i data-lucide="file-text" class="w-4 h-4 text-black"></i>
+          <span>Resume</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about" class="relative z-10 max-w-7xl mx-auto px-6 pt-20 pb-16">
+    <div class="max-w-4xl">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-medium mb-6">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+        </span>
+        Open to Sr. Data Analyst & Business Analyst Opportunities
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        Turning high-volume telemetry & complex operations into 
+        <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-500 bg-clip-text text-transparent">
+          strategic business intelligence.
+        </span>
+      </h1>
+
+      <!-- Bio Paragraph -->
+      <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed mb-8 max-w-3xl">
+        I am a <strong class="text-white font-semibold">Senior Data Analyst & Business Analyst</strong> with deep expertise across 
+        telecom network telemetry, operations engineering, and business metrics. I specialize in building end-to-end analytical pipelines, 
+        reducing operational downtime (MTTR), tracking capacity scaling, and curating high-fidelity datasets for machine learning.
+      </p>
+
+      <!-- Quick Action Buttons -->
+      <div class="flex flex-wrap items-center gap-3 pt-2">
+        <a href="#projects" class="px-6 py-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold flex items-center gap-2 shadow-lg shadow-cyan-500/25 transition-all text-sm">
+          <span>Explore Projects & Case Studies</span>
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+        <a href="https://github.com/PreethamPanchakshari" target="_blank" rel="noopener noreferrer" 
+           class="px-5 py-3 rounded-xl glass hover:bg-dark-hover border border-dark-border text-slate-200 font-semibold flex items-center gap-2 transition-all text-sm">
+          <i data-lucide="github" class="w-4 h-4 text-slate-300"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/panchakshari-p-5298984a/" target="_blank" rel="noopener noreferrer" 
+           class="px-5 py-3 rounded-xl glass hover:bg-dark-hover border border-dark-border text-slate-200 font-semibold flex items-center gap-2 transition-all text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:pritham1989@gmail.com" 
+           class="px-5 py-3 rounded-xl glass hover:bg-dark-hover border border-dark-border text-slate-200 font-semibold flex items-center gap-2 transition-all group text-sm">
+          <i data-lucide="mail" class="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform"></i>
+          <span>Email Me</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Impact Metric Counters -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+      <div class="glass p-5 rounded-2xl border border-dark-border">
+        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 code-font">99.9%</div>
+        <div class="text-sm font-medium text-slate-300 mt-1">Network Availability Focus</div>
+        <div class="text-xs text-slate-400 mt-0.5">Fiber outage RCA & MTTR reduction</div>
+      </div>
+      <div class="glass p-5 rounded-2xl border border-dark-border">
+        <div class="text-2xl sm:text-3xl font-extrabold text-blue-400 code-font">4G ➔ 5G</div>
+        <div class="text-sm font-medium text-slate-300 mt-1">Migration Analytics</div>
+        <div class="text-xs text-slate-400 mt-0.5">Consumption & capacity modeling</div>
+      </div>
+      <div class="glass p-5 rounded-2xl border border-dark-border">
+        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 code-font">SLA & Ops</div>
+        <div class="text-sm font-medium text-slate-300 mt-1">Workflow Optimization</div>
+        <div class="text-xs text-slate-400 mt-0.5">Escalation & rejection diagnostics</div>
+      </div>
+      <div class="glass p-5 rounded-2xl border border-dark-border">
+        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 code-font">AI / ML</div>
+        <div class="text-sm font-medium text-slate-300 mt-1">Data Annotation & QA</div>
+        <div class="text-xs text-slate-400 mt-0.5">High-integrity ground truth curation</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Technical Toolkit Section -->
+  <section id="skills" class="relative z-10 max-w-7xl mx-auto px-6 py-16 border-t border-dark-border/60">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div>
+        <div class="text-xs uppercase tracking-wider text-cyan-400 font-semibold mb-2">Core Competencies</div>
+        <h2 class="text-3xl font-bold text-white tracking-tight">Technical Toolkit & Analytical Stack</h2>
+      </div>
+      <p class="text-sm text-slate-400 max-w-md">
+        Proven blend of statistical scripting, business intelligence reporting, operations analytics, and data pipeline management.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Data & Scripting -->
+      <div class="glass p-6 rounded-2xl border border-dark-border hover:border-cyan-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-5">
+          <i data-lucide="database" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Data & Statistical Scripting</h3>
+        <p class="text-sm text-slate-400 mb-4">Handling high-volume relational tables, exploratory data analysis, and telemetry feeds.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Python</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">SQL Queries & Joins</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Jupyter Notebooks</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Data Aggregation</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">EDA (Exploratory Analysis)</span>
+        </div>
+      </div>
+
+      <!-- Business Intelligence & Visualization -->
+      <div class="glass p-6 rounded-2xl border border-dark-border hover:border-blue-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-5">
+          <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Business Intelligence & Viz</h3>
+        <p class="text-sm text-slate-400 mb-4">Transforming raw telemetry into executive-ready dashboards and operational scorecards.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Tableau</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Power BI</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Interactive Dashboards</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">KPI Scorecards</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">TradingView Visuals</span>
+        </div>
+      </div>
+
+      <!-- Operations & AI Foundations -->
+      <div class="glass p-6 rounded-2xl border border-dark-border hover:border-purple-500/40 transition-colors">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-5">
+          <i data-lucide="layers" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Operations & AI Data Quality</h3>
+        <p class="text-sm text-slate-400 mb-4">Process engineering, bottleneck elimination, and dataset curation for AI workflows.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Data Annotation & QA</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">SLA & MTTR Management</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Root Cause Analysis (RCA)</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Escalation Pipelines</span>
+          <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-dark-bg border border-dark-border text-slate-300">Ground Truth Curation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects & Case Studies Section -->
+  <section id="projects" class="relative z-10 max-w-7xl mx-auto px-6 py-16 border-t border-dark-border/60">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+      <div>
+        <div class="text-xs uppercase tracking-wider text-cyan-400 font-semibold mb-2">Portfolio Evidence</div>
+        <h2 class="text-3xl font-bold text-white tracking-tight">Featured Projects & Executive Case Studies</h2>
+      </div>
+      
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap gap-2" id="filter-container">
+        <button onclick="filterProjects('all')" class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium bg-cyan-500 text-slate-950 transition-all">All Work (8)</button>
+        <button onclick="filterProjects('analytics')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-dark-card border border-dark-border text-slate-300 hover:text-white transition-all">Data & Analytics</button>
+        <button onclick="filterProjects('telecom')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-dark-card border border-dark-border text-slate-300 hover:text-white transition-all">Telecom & Telemetry</button>
+        <button onclick="filterProjects('operations')" class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium bg-dark-card border border-dark-border text-slate-300 hover:text-white transition-all">Operations & SLAs</button>
+      </div>
+    </div>
+
+    <!-- Grid of Projects -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+
+      <!-- 1. Stock Analysis (TradingView + Moving Averages) -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="analytics">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Data & Financial Analytics</span>
+            <i data-lucide="trending-up" class="w-5 h-5 text-emerald-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            Quantitative Stock Analysis via Moving Averages
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Conducted financial time-series analysis evaluating trend momentum, support/resistance zones, and SMA/EMA indicator crossovers to identify optimal entry/exit risk profiles.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">TradingView</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Moving Averages (SMA/EMA)</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Trend Analysis</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('stock')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Analysis Details & Chart</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. 4G to 5G Upgrade Analysis -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="telecom analytics">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">Telecom Telemetry</span>
+            <i data-lucide="radio" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            4G–5G Migration & Data Consumption Modeling
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Analyzed large-scale cellular data consumption patterns across regional nodes to identify saturation points and forecast capacity demands driving high-priority 5G site upgrades.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Data Modeling</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Capacity Planning</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">SQL / Power BI</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('migration')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Fiber Backbone Outages -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="telecom operations">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/20">Critical Infrastructure</span>
+            <i data-lucide="activity" class="w-5 h-5 text-rose-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            Fiber Backbone Outage & Anomaly Root Cause Analysis
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Telemetry-driven diagnostic investigation into optical transport disruptions. Correlated alarm logs and weather telemetry to shorten Mean Time to Repair (MTTR) and protect core SLA metrics.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Root Cause Analysis</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">MTTR Reduction</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Incident Telemetry</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('fiber')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4. Bandwidth Upgrades & High Internet Speed -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="telecom analytics">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">Throughput Optimization</span>
+            <i data-lucide="zap" class="w-5 h-5 text-blue-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            High-Speed Access & Bandwidth Scaling Analytics
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Evaluated peak throughput metrics and packet congestion trends across network distribution links, building business justification models for multi-gigabit bandwidth expansion.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Bandwidth Sizing</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Bottleneck Analytics</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Traffic Analysis</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('bandwidth')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 5. Block 26 Project -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="telecom operations">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">Enterprise Deployment</span>
+            <i data-lucide="server" class="w-5 h-5 text-amber-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            Block 26 Network Deployment & Benchmark Telemetry
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Managed telemetry verification, signal parameter health checks, and SLA tracking for the specialized Block 26 cluster rollout, validating throughput benchmarks prior to production sign-off.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Cluster Rollout</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Performance Benchmarks</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Quality Assurance</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('block26')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 6. AI Data Annotation & Ground Truth -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="analytics operations">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-purple-500/10 text-purple-400 border border-purple-500/20">AI / Machine Learning</span>
+            <i data-lucide="check-circle-2" class="w-5 h-5 text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            AI Training Data Annotation & QA Protocol
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Developed rigorous data annotation standards, multi-tier audit protocols, and consistency benchmarks to supply ML models with high-fidelity, verified training datasets.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Ground Truth Datasets</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Annotation QA</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Data Governance</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('annotation')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 7. Escalations and Rejections Pipeline -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="operations">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-teal-500/10 text-teal-400 border border-teal-500/20">Operational Excellence</span>
+            <i data-lucide="shield-alert" class="w-5 h-5 text-teal-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            Operational Escalations & Rejection Analysis
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Built an analytical audit trail identifying systemic causes of workflow rejections and high-level escalations, standardizing triage rules to cut process cycle time.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Workflow Diagnostics</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Rejection Trend Tracking</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">SLA Adherence</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('escalations')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 8. Operations Scorecard & Performance Management -->
+      <div class="project-card glass rounded-2xl border border-dark-border overflow-hidden flex flex-col justify-between hover:border-cyan-500/50 transition-all group" data-category="operations analytics">
+        <div class="p-6">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded text-[11px] font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Business Intelligence</span>
+            <i data-lucide="gauge" class="w-5 h-5 text-indigo-400"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+            Cross-Functional Operations & KPI Scorecards
+          </h3>
+          <p class="text-sm text-slate-300 leading-relaxed mb-4">
+            Delivered centralized operational tracking dashboards for leadership, monitoring throughput quotas, ticket turnaround velocity, and resource distribution.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6">
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">KPI Dashboards</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Tableau / Power BI</span>
+            <span class="px-2 py-0.5 rounded text-[11px] bg-dark-bg text-slate-300 border border-dark-border">Executive Reporting</span>
+          </div>
+        </div>
+        <div class="p-6 pt-0 border-t border-dark-border/40 mt-auto">
+          <button onclick="openCaseStudy('ops')" class="w-full py-2.5 rounded-xl bg-dark-hover hover:bg-cyan-500 hover:text-black text-cyan-400 border border-cyan-500/30 text-xs font-bold transition-all flex items-center justify-center gap-2">
+            <span>View Case Study</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Embedded Live Chart Showcase -->
+  <section class="relative z-10 max-w-7xl mx-auto px-6 py-16 border-t border-dark-border/60">
+    <div class="glass p-8 rounded-3xl border border-dark-border">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-2">
+            <i data-lucide="line-chart" class="w-4 h-4"></i>
+            Interactive Showcase
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Financial Time-Series & Moving Average Analysis</h2>
+          <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+            Live technical analysis demonstration showcasing price momentum, trend continuity, and moving average crossovers via TradingView.
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Live TradingView Widget
+          </span>
+        </div>
+      </div>
+
+      <!-- TradingView Widget Embed -->
+      <div class="rounded-2xl overflow-hidden border border-dark-border bg-dark-bg h-[480px]">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div id="tradingview_chart_container" style="height:calc(100% - 32px);width:100%"></div>
+          <div class="tradingview-widget-copyright text-center py-1 text-xs text-slate-400">
+            <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank" class="text-cyan-400 hover:underline">Track all markets on TradingView</a>
+          </div>
+          <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+          <script type="text/javascript">
+            new TradingView.widget({
+              "autosize": true,
+              "symbol": "NASDAQ:AAPL",
+              "interval": "D",
+              "timezone": "Etc/UTC",
+              "theme": "dark",
+              "style": "1",
+              "locale": "en",
+              "toolbar_bg": "#111726",
+              "enable_publishing": false,
+              "allow_symbol_change": true,
+              "container_id": "tradingview_chart_container",
+              "studies": [
+                "MASimple@tv-basicstudies",
+                "EMA@tv-basicstudies"
+              ]
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience & Value Proposition -->
+  <section id="experience" class="relative z-10 max-w-7xl mx-auto px-6 py-16 border-t border-dark-border/60">
+    <div class="max-w-3xl mb-12">
+      <div class="text-xs uppercase tracking-wider text-cyan-400 font-semibold mb-2">How I Drive Results</div>
+      <h2 class="text-3xl font-bold text-white tracking-tight">Bridging Analytics with Business Impact</h2>
+      <p class="text-slate-400 mt-2">
+        My experience combines the investigative rigor of a data scientist with the operational pragmatism of a senior business analyst.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="space-y-3">
+        <div class="text-cyan-400 text-sm font-bold code-font">01 / DIAGNOSE</div>
+        <h3 class="text-lg font-bold text-white">Root Cause Discovery</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          I don't just report numbers; I dive into event telemetry, error logs, and operational rejections to isolate the root failure mode behind downtime and inefficiencies.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="text-blue-400 text-sm font-bold code-font">02 / MODEL & VISUALIZE</div>
+        <h3 class="text-lg font-bold text-white">Actionable Intelligence</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Using SQL, Python, Tableau, and Power BI, I convert millions of raw telemetry rows into clean executive scorecards that highlight capacity constraints before they impact customers.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <div class="text-purple-400 text-sm font-bold code-font">03 / GOVERN & SCALE</div>
+        <h3 class="text-lg font-bold text-white">Data Integrity & QA</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          Whether designing strict annotation guidelines for AI training sets or establishing SLA protocols for operations, I ensure that data quality remains pristine at scale.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect / Call to Action Footer -->
+  <footer class="relative z-10 border-t border-dark-border bg-dark-bg/90 mt-20">
+    <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h3 class="text-2xl font-bold text-white">Ready to Discuss Opportunities</h3>
+        <p class="text-slate-400 text-sm mt-1 max-w-lg">
+          Available for Senior Data Analyst, Business Analyst, and Telecom/Operations Analytics positions. Let's connect on LinkedIn.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <a href="https://github.com/PreethamPanchakshari" target="_blank" rel="noopener noreferrer" 
+           class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold flex items-center gap-2 border border-slate-700 transition-all text-sm">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/panchakshari-p-5298984a/" target="_blank" rel="noopener noreferrer" 
+           class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold flex items-center gap-2 shadow-lg shadow-blue-600/25 transition-all text-sm">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:pritham1989@gmail.com" 
+           class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold flex items-center gap-2 shadow-lg shadow-emerald-600/25 transition-all text-sm">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Email</span>
+        </a>
+        <button onclick="openModal('resume-modal')" class="px-5 py-3 rounded-xl glass hover:bg-dark-hover border border-dark-border text-slate-200 font-semibold flex items-center gap-2 text-sm transition-all">
+          <i data-lucide="file-text" class="w-4 h-4 text-cyan-400"></i>
+          <span>View Resume</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="border-t border-dark-border/40 py-6 text-center text-xs text-slate-400 code-font">
+      &copy; 2026 Panchakshari P • Sr. Data Analyst & Business Analyst • Hosted on Render
+    </div>
+  </footer>
+
+  <!-- Modal: Case Study Deep Dive -->
+  <div id="case-study-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass max-w-2xl w-full rounded-3xl border border-dark-border p-6 sm:p-8 max-h-[90vh] overflow-y-auto relative animate-in fade-in zoom-in-95 duration-200">
+      <button onclick="closeModal('case-study-modal')" class="absolute top-6 right-6 p-2 rounded-xl bg-dark-bg hover:bg-dark-border text-slate-400 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      <div id="modal-content">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Quick Resume View -->
+  <div id="resume-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass max-w-3xl w-full rounded-3xl border border-dark-border p-6 sm:p-8 max-h-[90vh] overflow-y-auto relative">
+      <button onclick="closeModal('resume-modal')" class="absolute top-6 right-6 p-2 rounded-xl bg-dark-bg hover:bg-dark-border text-slate-400 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+      
+      <div class="mb-6 border-b border-dark-border pb-6">
+        <div class="text-xs uppercase tracking-wider text-cyan-400 font-semibold mb-1">Candidate Profile</div>
+        <h2 class="text-2xl font-bold text-white">Panchakshari P</h2>
+        <p class="text-slate-300 text-sm mt-1">Sr. Data Analyst | Business Analyst</p>
+        <div class="flex flex-wrap items-center gap-4 text-xs text-slate-400 mt-3">
+          <a href="https://github.com/PreethamPanchakshari" target="_blank" class="text-slate-200 hover:underline flex items-center gap-1.5">
+            <i data-lucide="github" class="w-3.5 h-3.5"></i> github.com/PreethamPanchakshari
+          </a>
+          <span class="text-slate-600">•</span>
+          <a href="https://www.linkedin.com/in/panchakshari-p-5298984a/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1.5">
+            <i data-lucide="linkedin" class="w-3.5 h-3.5"></i> linkedin.com/in/panchakshari-p-5298984a/
+          </a>
+          <span class="text-slate-600">•</span>
+          <a href="mailto:pritham1989@gmail.com" class="text-emerald-400 hover:underline flex items-center gap-1.5">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i> pritham1989@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+        <div>
+          <h3 class="text-white font-bold text-base mb-2 border-b border-dark-border/60 pb-1">Executive Summary</h3>
+          <p>
+            Accomplished Senior Data Analyst and Business Analyst with a strong track record of transforming complex network telemetry, operational workflows, and enterprise data into actionable business intelligence. Expertise spans SQL, Python, Tableau, Power BI, data annotation for AI workflows, root cause failure analysis (RCA), and high-availability SLA governance.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold text-base mb-2 border-b border-dark-border/60 pb-1">Core Technical Competencies</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="bg-dark-bg p-3 rounded-xl border border-dark-border">
+              <strong class="text-cyan-400 block mb-1">Data & Analytics</strong>
+              Python, SQL, Jupyter Notebooks, Exploratory Data Analysis (EDA), Time-Series Evaluation, Moving Averages.
+            </div>
+            <div class="bg-dark-bg p-3 rounded-xl border border-dark-border">
+              <strong class="text-blue-400 block mb-1">Business Intelligence & Viz</strong>
+              Tableau, Power BI, Executive Dashboards, KPI Tracking, Throughput Metrics, TradingView.
+            </div>
+            <div class="bg-dark-bg p-3 rounded-xl border border-dark-border">
+              <strong class="text-purple-400 block mb-1">AI / ML Data Governance</strong>
+              Data Annotation Protocols, Ground Truth Curation, Dataset Integrity, Multi-Tier Auditing.
+            </div>
+            <div class="bg-dark-bg p-3 rounded-xl border border-dark-border">
+              <strong class="text-emerald-400 block mb-1">Operations & Infrastructure</strong>
+              Root Cause Analysis (RCA), MTTR Reduction, Escalations & Rejections Tracking, SLA Governance, Capacity Planning.
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-white font-bold text-base mb-2 border-b border-dark-border/60 pb-1">Key Experience & Project Accomplishments</h3>
+          <ul class="space-y-2 list-disc list-inside text-slate-300 text-xs sm:text-sm">
+            <li><strong>4G to 5G Upgrade Modeling:</strong> Modeled high-density cell traffic to forecast bandwidth exhaustion, driving priority infrastructure provisioning.</li>
+            <li><strong>Fiber Backbone Outage Mitigation:</strong> Conducted telemetry-based root-cause analyses on optical network failures, contributing to reduced MTTR and high SLA compliance.</li>
+            <li><strong>Quantitative Stock Analysis:</strong> Developed momentum and moving average tracking frameworks via TradingView to analyze financial market volatility.</li>
+            <li><strong>Operational Rejections & Escalation Diagnostics:</strong> Analyzed process failure points to reduce ticket rejection rates and optimize enterprise operations.</li>
+            <li><strong>AI Training Data Curation:</strong> Built structured data annotation QA pipelines ensuring high fidelity for machine learning training sets.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-dark-border flex items-center justify-between">
+        <a href="https://www.linkedin.com/in/panchakshari-p-5298984a/" target="_blank" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center gap-2">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          Connect via LinkedIn
+        </a>
+        <button onclick="window.print()" class="px-4 py-2.5 rounded-xl glass hover:bg-dark-hover border border-dark-border text-slate-300 text-xs font-semibold flex items-center gap-2">
+          <i data-lucide="printer" class="w-4 h-4"></i>
+          Print / Save PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for Modals & Interactive Filtering -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Case Study Content Repository
+    const caseStudies = {
+      stock: {
+        title: "Quantitative Stock Analysis via Moving Averages",
+        subtitle: "Financial Time-Series & Momentum Indicator Tracking",
+        category: "Data & Financial Analytics",
+        tools: ["TradingView", "SMA (Simple Moving Average)", "EMA (Exponential Moving Average)", "Momentum Indicators"],
+        problem: "Market price sequences contain substantial noise. Traders and analysts require systematic filtering to differentiate between temporary fluctuations and genuine trend reversals.",
+        methodology: "Implemented dual moving average crossover strategies (short-term vs long-term) alongside volume profile analysis on TradingView to evaluate support and resistance dynamics.",
+        insights: "Demonstrated how dynamic EMA responses capture early trend momentum shifts while SMA ribbons filter out sideways false breakouts.",
+        businessImpact: "Provides an objective framework for quantitative decision-making, trend confirmation, and structured risk mitigation."
+      },
+      migration: {
+        title: "4G–5G Migration & Data Consumption Modeling",
+        subtitle: "Cellular Traffic Pattern Analysis & Capacity Planning",
+        category: "Telecom Telemetry & BI",
+        tools: ["SQL", "Power BI / Tableau", "Cellular Telemetry Logs", "Python"],
+        problem: "Network carriers need to transition users from legacy 4G to 5G infrastructure without service disruption while prioritizing capital expenditure for cell site upgrades.",
+        methodology: "Aggregated node-level consumption metrics to model peak data usage across busy hours. Clustered cell towers by throughput saturation thresholds.",
+        insights: "Identified high-density geographic nodes where data growth outpaced existing bandwidth capacity by over 140%, establishing direct candidates for 5G overlay.",
+        businessImpact: "Optimized infrastructure deployment schedules, reduced network congestion risks, and supported an evidence-based capital investment strategy."
+      },
+      fiber: {
+        title: "Fiber Backbone Outage & Anomaly Root Cause Analysis",
+        subtitle: "Critical Infrastructure Telemetry & MTTR Optimization",
+        category: "Critical Infrastructure",
+        tools: ["OTDR / Optical Telemetry", "Root Cause Analysis (RCA)", "Power BI", "Incident Logs"],
+        problem: "Optical transport disruptions across fiber backbone cables create severe downtime and breach high-severity enterprise SLAs.",
+        methodology: "Analyzed timestamped alarm telemetry and historical failure tickets. Correlated environmental parameters, construction records, and physical fiber segments to pinpoint recurring fault triggers.",
+        insights: "Uncovered that 60% of repeat outages clustered around specific conduit pinch-points and unshielded civil construction zones.",
+        businessImpact: "Reduced Mean Time to Repair (MTTR) by accelerating diagnostic speed and helped implement proactive protective rerouting to preserve 99.9% uptime."
+      },
+      bandwidth: {
+        title: "High-Speed Access & Bandwidth Scaling Analytics",
+        subtitle: "Throughput Optimization & Network Sizing",
+        category: "Throughput Analytics",
+        tools: ["Network Telemetry", "Capacity Forecasting", "SQL", "Executive Reporting"],
+        problem: "Rapid customer data growth led to localized throttling and packet latency during peak utilization windows.",
+        methodology: "Analyzed distribution link saturation rates, interface throughput graphs, and subscriber traffic distribution over multi-month windows.",
+        insights: "Pinpointed core switch uplinks running at >85% capacity during evening peaks, requiring immediate provision upgrades.",
+        businessImpact: "Delivered data-backed bandwidth upgrade proposals that cleared traffic bottlenecks and maintained high subscriber QoS."
+      },
+      block26: {
+        title: "Block 26 Network Deployment & Benchmark Telemetry",
+        subtitle: "Site-Specific Cluster Rollout & Performance Verification",
+        category: "Enterprise Rollout",
+        tools: ["Signal Telemetry", "Benchmark QA", "KPI Tracking", "SLA Adherence"],
+        problem: "Deploying high-density network sectors (Block 26) required verification against stringent operational standards before traffic migration.",
+        methodology: "Conducted pre- and post-deployment telemetry audits, tracking latency, packet loss, and throughput stability under test load conditions.",
+        insights: "Resolved three pre-commissioning signal irregularities that would have caused immediate production service tickets post-launch.",
+        businessImpact: "Ensured 100% compliant site commissioning, zero launch-day outages, and smooth operational handover."
+      },
+      annotation: {
+        title: "AI Training Data Annotation & QA Protocol",
+        subtitle: "Ground-Truth Dataset Quality Management for Machine Learning",
+        category: "AI / Data Quality",
+        tools: ["Annotation Standards", "Inter-Annotator Agreement", "Data Quality Auditing"],
+        problem: "Machine learning and computer vision/NLP algorithms frequently fail or exhibit bias due to poor labeling quality and lack of uniform ground truth.",
+        methodology: "Formulated multi-tier data labeling taxonomy, established edge-case arbitration rules, and instituted statistically sampled QA audits.",
+        insights: "Increased dataset annotation consistency and agreement rates to >98% across complex labeling classes.",
+        businessImpact: "Provided clean, high-integrity training data that accelerated downstream AI model convergence and minimized retraining cycles."
+      },
+      escalations: {
+        title: "Operational Escalations & Rejection Analysis",
+        subtitle: "Systemic Workflow Bottleneck Diagnostics & SLA Protection",
+        category: "Operational Excellence",
+        tools: ["Ticket Telemetry", "Root Cause Analysis (RCA)", "Workflow Auditing"],
+        problem: "High ticket rejection rates and frequent executive escalations caused operational friction, delayed deliveries, and inflated support costs.",
+        methodology: "Extracted and categorized escalation histories, tracking rejections by reason codes, department handoffs, and documentation gaps.",
+        insights: "Discovered that 45% of task rejections stemmed from incomplete initial submission payloads that could be automated with upstream validation.",
+        businessImpact: "Cut recurring rejections, reduced average cycle time, and significantly lowered ticket escalation frequency."
+      },
+      ops: {
+        title: "Cross-Functional Operations & KPI Scorecards",
+        subtitle: "Centralized Performance Dashboards for Executive Leadership",
+        category: "Business Intelligence",
+        tools: ["Tableau", "Power BI", "SQL Data Aggregation", "Executive Scorecards"],
+        problem: "Dispersed operational teams lacked unified metrics, causing misalignment between engineering output and leadership business targets.",
+        methodology: "Consolidated multiple disparate tracking sheets and database tables into unified, interactive executive dashboards with daily automated refresh.",
+        insights: "Surfaced real-time throughput velocity trends and regional workload imbalances across operations teams.",
+        businessImpact: "Enabled data-driven resource reallocation, improving on-time milestone delivery and team productivity transparency."
+      }
+    };
+
+    function openCaseStudy(key) {
+      const data = caseStudies[key];
+      if (!data) return;
+
+      const content = `
+        <div class="mb-4">
+          <span class="px-2.5 py-1 rounded text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">${data.category}</span>
+        </div>
+        <h2 class="text-2xl font-bold text-white mb-1">${data.title}</h2>
+        <p class="text-sm text-cyan-400 font-medium mb-6">${data.subtitle}</p>
+
+        <div class="space-y-5 text-sm text-slate-300">
+          <div>
+            <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-1 text-slate-400">Tools & Methodologies</h4>
+            <div class="flex flex-wrap gap-1.5">
+              ${data.tools.map(t => `<span class="px-2 py-0.5 rounded text-xs bg-dark-bg border border-dark-border text-slate-200">${t}</span>`).join('')}
+            </div>
+          </div>
+
+          <div class="border-t border-dark-border/60 pt-4">
+            <h4 class="text-white font-semibold mb-1 flex items-center gap-1.5 text-rose-400">
+              <i data-lucide="alert-circle" class="w-4 h-4"></i> The Problem Statement
+            </h4>
+            <p class="leading-relaxed">${data.problem}</p>
+          </div>
+
+          <div class="border-t border-dark-border/60 pt-4">
+            <h4 class="text-white font-semibold mb-1 flex items-center gap-1.5 text-cyan-400">
+              <i data-lucide="cpu" class="w-4 h-4"></i> Analytical Approach & Methodology
+            </h4>
+            <p class="leading-relaxed">${data.methodology}</p>
+          </div>
+
+          <div class="border-t border-dark-border/60 pt-4">
+            <h4 class="text-white font-semibold mb-1 flex items-center gap-1.5 text-amber-400">
+              <i data-lucide="lightbulb" class="w-4 h-4"></i> Key Insights Discovered
+            </h4>
+            <p class="leading-relaxed">${data.insights}</p>
+          </div>
+
+          <div class="border-t border-dark-border/60 pt-4 bg-cyan-950/20 p-4 rounded-xl border border-cyan-500/20">
+            <h4 class="text-cyan-300 font-bold mb-1 flex items-center gap-1.5">
+              <i data-lucide="trophy" class="w-4 h-4 text-cyan-400"></i> Measurable Business Impact
+            </h4>
+            <p class="leading-relaxed text-slate-200">${data.businessImpact}</p>
+          </div>
+
+          <div class="border-t border-dark-border/60 pt-4 flex items-center justify-between">
+            <a href="https://github.com/PreethamPanchakshari" target="_blank" rel="noopener noreferrer" 
+               class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center gap-2 border border-slate-700 transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>GitHub Repositories</span>
+            </a>
+            <button onclick="closeModal('case-study-modal')" class="px-4 py-2 rounded-xl glass hover:bg-dark-hover text-slate-300 text-xs font-semibold">
+              Close
+            </button>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('modal-content').innerHTML = content;
+      lucide.createIcons();
+      openModal('case-study-modal');
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close on escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal('case-study-modal');
+        closeModal('resume-modal');
+      }
+    });
+
+    // Close when clicking modal backdrop
+    ['case-study-modal', 'resume-modal'].forEach(id => {
+      const modal = document.getElementById(id);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal(id);
+      });
+    });
+
+    // Project filtering functionality
+    function filterProjects(category) {
+      const cards = document.querySelectorAll('.project-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update button styling
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-cyan-500', 'text-slate-950', 'active');
+        btn.classList.add('bg-dark-card', 'text-slate-300');
+      });
+      event.target.classList.add('bg-cyan-500', 'text-slate-950', 'active');
+      event.target.classList.remove('bg-dark-card', 'text-slate-300');
+
+      // Filter cards
+      cards.forEach(card => {
+        const cats = card.getAttribute('data-category');
+        if (category === 'all' || cats.includes(category)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
